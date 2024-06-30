@@ -13,8 +13,8 @@ RUN echo "APT::Install-Recommends false;" > /etc/apt/apt.conf.d/00-install-recom
 # ==============================
 # Install hugo
 # ==============================
-RUN wget https://github.com/gohugoio/hugo/releases/download/v0.128.0/hugo_extended_0.128.0_linux-amd64.deb && \
-  apt install -y ./hugo_extended_0.128.0_linux-amd64.deb
+RUN wget https://github.com/gohugoio/hugo/releases/download/v0.128.0/hugo_0.128.0_linux-amd64.deb && \
+  apt install -y ./hugo_0.128.0_linux-amd64.deb
 
 # ==============================
 # Purge unused packages
