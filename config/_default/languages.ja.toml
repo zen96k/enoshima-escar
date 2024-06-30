@@ -1,11 +1,11 @@
-languageCode = "en"
-languageName = "English"
+languageCode = "ja"
+languageName = "Japanese"
 weight = 1
 title = "Blowfish"
 
 [params]
-  displayName = "EN"
-  isoCode = "en"
+  displayName = "JA"
+  isoCode = "ja"
   rtl = false
   dateFormat = "2 January 2006"
   # logo = "img/logo.png"
