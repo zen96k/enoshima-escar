@@ -1,0 +1,29 @@
+{
+  "build": {
+    "dockerfile": "../dockerfile"
+  },
+  "runArgs": [
+    "--name=ee-hugo"
+  ],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "eamodio.gitlens",
+        "ms-azuretools.vscode-docker",
+        "MS-CEINTL.vscode-language-pack-ja"
+      ],
+      "settings": {
+        "editor.renderWhitespace": "all",
+        "editor.tabSize": 2,
+        "editor.formatOnSave": true,
+        "files.trimFinalNewlines": true,
+        "files.trimTrailingWhitespace": true,
+        "[markdown]": {
+          "editor.formatOnSave": false,
+          "files.trimTrailingWhitespace": false
+        }
+      }
+    }
+  },
+  "postStartCommand": "npm install -g blowfish-tools"
+}

@@ -1,0 +1,8 @@
+# Directory
+.devcontainer
+.git
+
+# File
+.dockerignore
+dockerfile
+README.md
