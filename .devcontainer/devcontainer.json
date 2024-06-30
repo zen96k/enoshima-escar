@@ -10,7 +10,8 @@
       "extensions": [
         "eamodio.gitlens",
         "ms-azuretools.vscode-docker",
-        "MS-CEINTL.vscode-language-pack-ja"
+        "MS-CEINTL.vscode-language-pack-ja",
+        "tamasfe.even-better-toml"
       ],
       "settings": {
         "editor.renderWhitespace": "all",
@@ -18,6 +19,8 @@
         "editor.formatOnSave": true,
         "files.trimFinalNewlines": true,
         "files.trimTrailingWhitespace": true,
+        "evenBetterToml.formatter.indentEntries": true,
+        "evenBetterToml.formatter.indentTables": true,
         "[markdown]": {
           "editor.formatOnSave": false,
           "files.trimTrailingWhitespace": false
