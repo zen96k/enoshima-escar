@@ -5,6 +5,9 @@
   "runArgs": [
     "--name=ee-hugo"
   ],
+  "containerEnv": {
+    "TZ": "Asia/Tokyo"
+  },
   "customizations": {
     "vscode": {
       "extensions": [
