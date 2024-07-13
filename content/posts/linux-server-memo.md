@@ -1,10 +1,9 @@
 +++
-title = "Linuxをインストールしたらやること"
-date = 1996-02-11
+title = 'Linux Server Memo'
 +++
 
 自宅のPCにLinuxをインストールしたらやることの備忘録。  
-※Debian 13で動作確認済み。
+※Debian 12で動作の確認をした。
 
 ## タイムゾーン関連
 

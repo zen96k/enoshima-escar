@@ -7,18 +7,12 @@ title = "江ノ島エスカー"
 displayName = "JA"
 isoCode = "ja"
 rtl = false
-# dateFormat = "2006-01-02 15:04:05"
 dateFormat = "2006年1月2日"
-# logo = "img/logo.png"
-# secondaryLogo = "img/secondary-logo.png"
-description = "Portfolio of Kotaro Kuroda"
-# copyright = "Copy, _right?_ :thinking_face:"
 
 [author]
 name = "Kotaro Kuroda"
-image = "img/default_logo.jpg"
+image = "img/icon.jpg"
 headline = "後藤正文になりたい"
-# bio = "A little bit about you"
 links = [
   # { email = "mailto:hello@your_domain.com" },
   # { link = "https://link-to-some-website.com/" },
