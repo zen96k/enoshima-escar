@@ -17,7 +17,7 @@ defaultBackgroundImage = "img/background.jpg"
 [homepage]
 layout = "hero"
 showRecent = true
-showMoreLink = true
+# showMoreLink = true
 cardView = true
 
 [article]
