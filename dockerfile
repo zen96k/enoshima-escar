@@ -1,6 +1,7 @@
 FROM debian:12
 
 ARG DEBIAN_FRONTEND=noninteractive
+ARG FASTFETCH_VERSION=2.18.1
 ARG HUGO_VERSION=0.128.2
 
 SHELL ["/usr/bin/bash", "-ecx"]
@@ -16,10 +17,16 @@ RUN echo "APT::Install-Recommends false;" > /etc/apt/apt.conf.d/00-install-recom
 # Install packages
 # ==============================
 RUN apt install -y ca-certificates \
-                   curl wget \
-                   git \
-                   zip unzip \
-                   rsync
+    curl wget \
+    git \
+    zip unzip \
+    rsync
+
+# ==============================
+# Install fastfetch
+# ==============================
+RUN wget https://github.com/fastfetch-cli/fastfetch/releases/download/${FASTFETCH_VERSION}/fastfetch-linux-amd64.deb && \
+    apt install -y ./fastfetch-linux-amd64.deb
 
 # ==============================
 # Install hugo
