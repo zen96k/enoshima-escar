@@ -3,7 +3,7 @@
 # https://blowfish.page/docs/getting-started/
 
 theme = "blowfish"
-baseURL = "https://zen96k.github.io/enoshima-escar"
+# baseURL = "https://zen96k.github.io/enoshima-escar"
 languageCode = "ja"
 defaultContentLanguage = "ja"
 
@@ -13,8 +13,9 @@ enableRobotsTXT = true
 paginate = 10
 summaryLength = 0
 
-buildDrafts = false
-buildFuture = false
+# buildDrafts = true
+# buildExpired = true
+# buildFuture = true
 
 enableEmoji = true
 
