@@ -1,7 +1,7 @@
 FROM node:20
 
 ARG DEBIAN_FRONTEND=noninteractive
-ARG HUGO_VERSION=0.128.0
+ARG HUGO_VERSION=0.128.2
 
 SHELL ["/usr/bin/bash", "-ecx"]
 
