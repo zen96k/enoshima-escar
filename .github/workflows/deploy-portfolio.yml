@@ -23,6 +23,8 @@ jobs:
           hugo-version: 0.128.2
 
       - name: Build
+        env:
+          TZ: Asia/Tokyo
         run: hugo --environment production --minify
 
       - name: Deploy
