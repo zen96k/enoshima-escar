@@ -9,3 +9,6 @@ defaultContentLanguage = "ja"
 
 [frontmatter]
 date = [":fileModTime"]
+
+[outputs]
+home = ["HTML", "RSS", "JSON"]
