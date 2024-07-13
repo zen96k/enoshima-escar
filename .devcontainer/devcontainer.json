@@ -8,6 +8,9 @@
   "containerEnv": {
     "TZ": "Asia/Tokyo"
   },
+  "forwardPorts": [
+    1313
+  ],
   "customizations": {
     "vscode": {
       "extensions": [
