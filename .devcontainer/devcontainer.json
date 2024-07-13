@@ -25,8 +25,6 @@
         "editor.formatOnSave": true,
         "files.trimFinalNewlines": true,
         "files.trimTrailingWhitespace": true,
-        "evenBetterToml.formatter.indentEntries": true,
-        "evenBetterToml.formatter.indentTables": true,
         "[markdown]": {
           "editor.formatOnSave": false,
           "files.trimTrailingWhitespace": false
