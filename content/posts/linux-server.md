@@ -1,9 +1,11 @@
 +++
-title = "Hello, World!"
+title = "Linuxをインストールしたらやること"
 +++
 
-## Introduction
+自宅のPCにLinuxをインストールしたらやることの備忘録。
 
-This is **bold** text, and this is *emphasized* text.
+## 時刻設定
 
-Visit the [Hugo](https://gohugo.io) website!
+## SSH関連
+
+## Docker関連
