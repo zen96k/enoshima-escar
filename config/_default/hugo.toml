@@ -3,7 +3,7 @@
 # https://blowfish.page/docs/getting-started/
 
 theme = "blowfish"
-# baseURL = "http://localhost:1313"
+baseURL = "https://zen96k.github.io/enoshima-escar"
 languageCode = "ja"
 defaultContentLanguage = "ja"
 
