@@ -68,7 +68,3 @@ applyFilter = false
 name = 'fragmentrefs'
 type = 'fragments'
 weight = 10
-
-[frontmatter]
-date = [':git']
-lastmod = [':git']
