@@ -1,0 +1,28 @@
+# -- Theme Options --
+# These options control how the theme functions and allow you to
+# customise the display of your website.
+#
+# Refer to the theme docs for more details about each of these parameters.
+# https://blowfish.page/docs/configuration/#theme-parameters
+
+colorScheme = "blowfish"
+defaultAppearance = "dark"
+autoSwitchAppearance = false
+
+enableSearch = true
+
+defaultBackgroundImage = "img/background.jpg"
+# defaultFeaturedImage = "IMAGE.jpg"
+
+[homepage]
+layout = "hero"
+showRecent = true
+showMoreLink = true
+cardView = true
+
+[article]
+showBreadcrumbs = true
+showReadingTime = false
+showTableOfContents = true
+showWordCount = false
+sharingLinks = ["twitter", "bluesky"]
