@@ -7,6 +7,7 @@ Posts
 {{< /button >}} -->
 
 {{< typeit
+    speed=300
     tag=h3
     loop=true
 >}}
