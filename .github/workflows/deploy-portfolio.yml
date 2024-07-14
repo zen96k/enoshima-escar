@@ -4,6 +4,13 @@ on:
   push:
     branches:
     - work
+   paths:
+    - .github/workflows/deploy-portfolio.yml
+    - archetypes
+    - assets
+    - config
+    - content
+    - themes
 
 jobs:
   src-build-deploy:
