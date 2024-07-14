@@ -6,11 +6,11 @@ on:
     - work
     paths:
     - .github/workflows/deploy-portfolio.yml
-    - archetypes
-    - assets
-    - config
-    - content
-    - themes
+    - archetypes/**
+    - assets/**
+    - config/**
+    - content/**
+    - themes/**
 
 jobs:
   src-build-deploy:
