@@ -12,7 +12,6 @@ autoSwitchAppearance = false
 enableSearch = true
 
 defaultBackgroundImage = "img/background.jpg"
-# defaultFeaturedImage = "IMAGE.jpg"
 
 [homepage]
 layout = "hero"
