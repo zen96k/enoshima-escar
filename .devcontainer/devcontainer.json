@@ -17,7 +17,8 @@
         "eamodio.gitlens",
         "ms-azuretools.vscode-docker",
         "MS-CEINTL.vscode-language-pack-ja",
-        "tamasfe.even-better-toml"
+        "tamasfe.even-better-toml",
+        "kennylong.kubernetes-yaml-formatter"
       ],
       "settings": {
         "editor.renderWhitespace": "all",
