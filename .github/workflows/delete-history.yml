@@ -1,12 +1,12 @@
 name: Delete Workflow History
 
-# on:
-#   workflow_dispatch:
-#     inputs:
-#       workflow:
-#         description: workflow-id, workflow-name or filename
-#         required: true
-#         type: string
+on:
+  workflow_dispatch:
+    inputs:
+      workflow:
+        description: workflow-id, workflow-name or filename
+        required: true
+        type: string
 
 jobs:
   delete:
