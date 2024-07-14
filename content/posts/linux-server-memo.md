@@ -1,5 +1,5 @@
 +++
-title = 'Linux Server Memo'
+title = "Linux Server Memo"
 +++
 
 自宅のPCにLinuxをインストールして、最初にやったことの備忘録。  
