@@ -4,7 +4,7 @@ on:
   push:
     branches:
     - work
-   paths:
+    paths:
     - .github/workflows/deploy-portfolio.yml
     - archetypes
     - assets
