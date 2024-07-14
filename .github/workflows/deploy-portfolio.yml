@@ -18,6 +18,8 @@ jobs:
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
       cancel-in-progress: true
+    env:
+      TZ: Asia/Tokyo
     steps:
     - name: Checkout Source
       uses: actions/checkout@v4
