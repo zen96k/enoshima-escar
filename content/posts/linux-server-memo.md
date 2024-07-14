@@ -30,7 +30,7 @@ https://zenn.dev/kumamoto/articles/51bf0893620f0c
 ## SSH関連
 
 ※LinuxにSSHサーバーがインストールされていることが前提。  
-[「よく分かる公開鍵認証」](https://knowledge.sakura.ad.jp/3543)を参考に、公開鍵/秘密鍵のペアを作成する。  
+[よく分かる公開鍵認証](https://knowledge.sakura.ad.jp/3543)を参考に、公開鍵/秘密鍵のペアを作成する。  
 公開鍵を接続先の端末(Linux)に、秘密鍵を接続元の端末(Windowsなど)に配置して、SSHクライアントから接続する。  
 接続できたら、公開鍵認証方式でのみ接続を許可するように、SSHサーバーの設定を変更する。  
 具体的にはこんな感じ。
@@ -52,7 +52,7 @@ https://knowledge.sakura.ad.jp/3543
 ## Docker関連
 
 [Install Docker Engine on Debian](https://docs.docker.com/engine/install/debian)を参考に、Dockerをインストールする。  
-インストールできたら、[Run the Docker daemon as a non-root user (Rootless mode)](https://docs.docker.com/engine/security/rootless)を参考に、Dockerをrootlessモードで動作するように設定する。
+インストールできたら、[Run the Docker daemon as a non-root user (Rootless mode)](https://docs.docker.com/engine/security/rootless)を参考に、DockerをRootlessモードで動作するように設定する。
 
 ### 参考URL
 
