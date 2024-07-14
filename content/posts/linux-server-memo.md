@@ -42,7 +42,7 @@ PermitRootLogin no
 Port <port-number>
 UsePAM yes
 
-Subsystem sftp  /usr/lib/openssh/sftp-server
+Subsystem sftp /usr/lib/openssh/sftp-server
 ```
 
 ### 参考URL
