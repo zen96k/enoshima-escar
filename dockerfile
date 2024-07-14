@@ -1,4 +1,4 @@
-FROM debian:12
+FROM ubuntu:24.04
 
 ARG DEBIAN_FRONTEND=noninteractive
 ARG FASTFETCH_VERSION=2.18.1
@@ -16,7 +16,8 @@ RUN echo "APT::Install-Recommends false;" > /etc/apt/apt.conf.d/00-install-recom
 # ==============================
 # Install packages
 # ==============================
-RUN apt install -y ca-certificates \
+RUN apt install -y \
+    ca-certificates \
     curl wget \
     git \
     zip unzip \
