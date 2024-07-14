@@ -21,8 +21,6 @@ jobs:
     env:
       TZ: Asia/Tokyo
     steps:
-    - name: Install tzdata
-      run: apt install -y tzdata
     - name: Checkout Source
       uses: actions/checkout@v4
       with:
