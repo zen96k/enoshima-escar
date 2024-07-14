@@ -17,7 +17,7 @@ jobs:
       GH_REPOSITORY: ${{ github.repository }}
       GH_WORKFLOW: ${{ github.event.inputs.workflow }}
     steps:
-    - run: gh workflow view "${GH_WORKFLOW}"
+    # - run: gh workflow view "${GH_WORKFLOW}"
     - run: |
         gh run list --workflow "${GH_WORKFLOW}" --limit 1000 --json databaseId,status --jq '.[] | select(.status == "completed") | .databaseId' \
         | xargs -n 1 -I {} gh api -X DELETE repos/${GH_REPOSITORY}/actions/runs/{}
