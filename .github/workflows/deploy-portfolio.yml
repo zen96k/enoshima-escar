@@ -1,36 +1,41 @@
-name: GitHub Pages
+name: Deploy Portfolio to GitHub Pages
 
 on:
   push:
     branches:
-      - work
+    - work
+    paths:
+    - .github/workflows/deploy-portfolio.yml
+    - archetypes/**
+    - assets/**
+    - config/**
+    - content/**
+    - themes/**
 
 jobs:
-  build-deploy:
-    runs-on: ubuntu-20.04
+  deploy-portfolio:
+    runs-on: ubuntu-24.04
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
+      cancel-in-progress: true
+    env:
+      TZ: Asia/Tokyo
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-        with:
-          submodules: true
-          fetch-depth: 0
-
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
-        with:
-          hugo-version: 0.128.2
-
-      - name: Build
-        env:
-          TZ: Asia/Tokyo
-        run: hugo --environment production --minify
-
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        if: ${{ github.ref == 'refs/heads/work' }}
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: deploy
-          publish_dir: ./public
+    - name: Checkout Source
+      uses: actions/checkout@v4
+      with:
+        submodules: true
+        fetch-depth: 0
+    - name: Install Hugo
+      uses: peaceiris/actions-hugo@v3
+      with:
+        hugo-version: 0.128.2
+    - name: Build Portfolio
+      run: hugo --minify --environment production
+    - name: Deploy Portfolio
+      uses: peaceiris/actions-gh-pages@v4
+      if: ${{ github.ref == 'refs/heads/work' }}
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_branch: deploy
+        publish_dir: ./public

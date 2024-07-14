@@ -1,0 +1,23 @@
+name: Delete Workflow History
+
+on:
+  workflow_dispatch:
+    inputs:
+      workflow:
+        description: workflow-id, workflow-name or filename
+        required: true
+        type: string
+
+jobs:
+  delete-history:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 1
+    env:
+      # GITHUB_TOKEN: ${{ github.token }}
+      GITHUB_REPOSITORY: ${{ github.repository }}
+      GITHUB_WORKFLOW: ${{ github.event.inputs.workflow }}
+    steps:
+    - run: gh workflow view "${GITHUB_WORKFLOW}"
+    - run: |
+        gh run list --workflow "${GITHUB_WORKFLOW}" --limit 1000 --json databaseId,status --jq '.[] | select(.status == "completed") | .databaseId' \
+        | xargs -n 1 -I {} gh api -X DELETE repos/${GITHUB_REPOSITORY}/actions/runs/{}
