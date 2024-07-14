@@ -20,6 +20,7 @@ RUN apt install -y \
     ca-certificates \
     curl wget \
     git \
+    tzdata \
     zip unzip \
     rsync
 
