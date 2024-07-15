@@ -22,8 +22,12 @@ cardView = true
 [article]
 showDate = false
 showDateUpdated = true
-showBreadcrumbs = true
 showReadingTime = false
 showTableOfContents = true
+showTaxonomies = true
 showWordCount = false
 sharingLinks = ["twitter", "bluesky"]
+
+[list]
+showCards = true
+cardView = true
