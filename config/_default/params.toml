@@ -20,6 +20,8 @@ showRecent = true
 cardView = true
 
 [article]
+showDate = false
+showDateUpdated = true
 showBreadcrumbs = true
 showReadingTime = false
 showTableOfContents = true

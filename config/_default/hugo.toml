@@ -7,8 +7,11 @@ theme = "blowfish"
 languageCode = "ja"
 defaultContentLanguage = "ja"
 
+enableGitInfo = true
+
 [frontmatter]
-date = [":fileModTime"]
+# date = [":fileModTime"]
+lastmod = [":git"]
 
 [outputs]
 home = ["HTML", "RSS", "JSON"]
