@@ -10,8 +10,8 @@ defaultContentLanguage = "ja"
 enableGitInfo = true
 
 [frontmatter]
-# date = [":fileModTime"]
-lastmod = [":git", ":fileModTime"]
+# date = [":fileModTime", ":default"]
+lastmod = [":git", ":fileModTime", ":default"]
 
 [outputs]
 home = ["HTML", "RSS", "JSON"]
