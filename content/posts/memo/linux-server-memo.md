@@ -1,5 +1,6 @@
 +++
 title = "Linux Server Memo"
+date = "2024-07-12"
 +++
 
 自宅のPCにLinuxをインストールして、最初にやったことの備忘録。  
