@@ -25,5 +25,6 @@ showDateUpdated = true
 showBreadcrumbs = true
 showReadingTime = false
 showTableOfContents = true
+showTaxonomies = true
 showWordCount = false
 sharingLinks = ["twitter", "bluesky"]
