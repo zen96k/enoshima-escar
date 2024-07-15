@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Linux on 江ノ島エスカー</title><link>https://zen96k.github.io/enoshima-escar/tags/linux/</link><description>Recent content in Linux on 江ノ島エスカー</description><generator>Hugo -- gohugo.io</generator><language>ja</language><copyright>© 2024 Kotaro Kuroda</copyright><lastBuildDate>Fri, 12 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://zen96k.github.io/enoshima-escar/tags/linux/index.xml" rel="self" type="application/rss+xml"/><item><title>Linux Server Memo</title><link>https://zen96k.github.io/enoshima-escar/posts/memo/linux-server-memo/</link><pubDate>Fri, 12 Jul 2024 00:00:00 +0000</pubDate><guid>https://zen96k.github.io/enoshima-escar/posts/memo/linux-server-memo/</guid><description>自宅のPCにLinuxをインストールして、最初にやったことの備忘録。
 ※ディストリビューションはDebian 12を使用した。
 タイムゾーン関連 # 下記コマンドを実行して、タイムゾーンを設定する。
-日付や時刻が日本時間のものに設定できていればOK。
+日付や時刻が日本時間に設定できていればOK。
 $ sudo timedatectl set-timezone Asia/Tokyo $ timedatectl Local time: Sat 2024-07-13 18:24:38 JST Universal time: Sat 2024-07-13 09:24:38 UTC RTC time: Sat 2024-07-13 09:24:38 Time zone: Asia/Tokyo (JST, +0900) System clock synchronized: yes NTP service: active RTC in local TZ: no 参考URL # https://www.server-world.info/query?os=Ubuntu_22.04&amp;p=timezone
 https://zenn.dev/kumamoto/articles/51bf0893620f0c
 SSH関連 # ※LinuxにSSHサーバーがインストールされていることが前提。
