@@ -11,7 +11,7 @@ tags = ["Linux", "Debian", "SSH", "Docker"]
 ## タイムゾーン関連
 
 下記コマンドを実行して、タイムゾーンを設定する。  
-日付や時刻が日本時間のものに設定できていればOK。
+日付や時刻が日本時間に設定できていればOK。
 
 ```bash
 $ sudo timedatectl set-timezone Asia/Tokyo
