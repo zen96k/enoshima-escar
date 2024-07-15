@@ -11,7 +11,7 @@ enableGitInfo = true
 
 [frontmatter]
 # date = [":fileModTime"]
-lastmod = [":git"]
+lastmod = [":git", ":fileModTime"]
 
 [outputs]
 home = ["HTML", "RSS", "JSON"]
