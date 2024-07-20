@@ -4,7 +4,8 @@ ARG DEBIAN_FRONTEND=noninteractive
 ARG FASTFETCH_VERSION=2.18.1
 ARG HUGO_VERSION=0.128.2
 
-SHELL ["/usr/bin/bash", "-ecx"]
+# SHELL ["/usr/bin/bash", "-ecx"]
+SHELL ["/usr/bin/bash", "-ecuxo", "pipefail"]
 
 # ==============================
 # Update apt config
