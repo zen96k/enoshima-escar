@@ -1,11 +1,11 @@
-name: Deploy Portfolio to GitHub Pages
+name: Build Portfolio
 
 on:
   push:
     branches:
     - work
     paths:
-    - .github/workflows/deploy-portfolio.yml
+    - .github/workflows/build-portfolio.yml
     - archetypes/**
     - assets/**
     - config/**
@@ -13,7 +13,7 @@ on:
     - themes/**
 
 jobs:
-  deploy-portfolio:
+  build-portfolio:
     runs-on: ubuntu-24.04
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
@@ -32,7 +32,7 @@ jobs:
         hugo-version: 0.128.2
     - name: Build Portfolio
       run: hugo --minify --environment production
-    - name: Deploy Portfolio
+    - name: Push Portfolio
       uses: peaceiris/actions-gh-pages@v4
       if: ${{ github.ref == 'refs/heads/work' }}
       with:
