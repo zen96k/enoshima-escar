@@ -2,23 +2,21 @@
   "build": {
     "dockerfile": "../dockerfile"
   },
-  "runArgs": [
-    "--name=ee-hugo"
-  ],
+  "runArgs": ["--name=ee-hugo"],
   "containerEnv": {
     "TZ": "Asia/Tokyo"
   },
-  "forwardPorts": [
-    1313
-  ],
+  "forwardPorts": [1313],
   "customizations": {
     "vscode": {
       "extensions": [
         "eamodio.gitlens",
         "ms-azuretools.vscode-docker",
         "MS-CEINTL.vscode-language-pack-ja",
+        "esbenp.prettier-vscode",
         "tamasfe.even-better-toml",
-        "kennylong.kubernetes-yaml-formatter"
+        "kennylong.kubernetes-yaml-formatter",
+        "DavidAnson.vscode-markdownlint"
       ],
       "settings": {
         "editor.renderWhitespace": "all",
@@ -26,8 +24,23 @@
         "editor.formatOnSave": true,
         "files.trimFinalNewlines": true,
         "files.trimTrailingWhitespace": true,
+        "[dockerfile]": {
+          "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+        },
+        "[json]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[jsonc]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[toml]": {
+          "editor.defaultFormatter": "tamasfe.even-better-toml"
+        },
+        "[yaml]": {
+          "editor.defaultFormatter": "kennylong.kubernetes-yaml-formatter"
+        },
         "[markdown]": {
-          "editor.formatOnSave": false,
+          "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
           "files.trimTrailingWhitespace": false
         }
       }
