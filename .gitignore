@@ -3,4 +3,5 @@ public
 resources
 
 # File
+*.env
 .hugo_build.lock

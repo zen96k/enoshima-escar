@@ -2,7 +2,12 @@
   "build": {
     "dockerfile": "../dockerfile"
   },
-  "runArgs": ["--name=ee-hugo"],
+  "runArgs": [
+    "--env-file",
+    ".devcontainer/devcontainer.env",
+    "--name",
+    "ee-hugo"
+  ],
   "containerEnv": {
     "TZ": "Asia/Tokyo"
   },
@@ -46,5 +51,5 @@
       }
     }
   },
-  "postStartCommand": "fastfetch"
+  "postStartCommand": "bash .devcontainer/post_start_command.sh"
 }
