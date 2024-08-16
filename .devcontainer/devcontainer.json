@@ -24,11 +24,12 @@
         "DavidAnson.vscode-markdownlint"
       ],
       "settings": {
-        "editor.renderWhitespace": "all",
-        "editor.tabSize": 2,
         "editor.formatOnSave": true,
-        "files.trimFinalNewlines": true,
+        "editor.tabSize": 2,
+        "editor.renderWhitespace": "all",
         "files.trimTrailingWhitespace": true,
+        "files.insertFinalNewline": true,
+        "files.trimFinalNewlines": true,
         "[dockerfile]": {
           "editor.defaultFormatter": "ms-azuretools.vscode-docker"
         },
