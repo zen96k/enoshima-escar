@@ -24,9 +24,9 @@
         "DavidAnson.vscode-markdownlint"
       ],
       "settings": {
-        "editor.renderWhitespace": "all",
-        "editor.tabSize": 2,
         "editor.formatOnSave": true,
+        "editor.tabSize": 2,
+        "editor.renderWhitespace": "all",
         "files.trimTrailingWhitespace": true,
         "files.insertFinalNewline": true,
         "files.trimFinalNewlines": true,
