@@ -1,7 +1,14 @@
 {
-  "build": {
-    "dockerfile": "../dockerfile"
+  "image": "debian:12.6",
+  "features": {
+    "ghcr.io/devcontainers/features/hugo:1": {
+      "version": "0.128.2"
+    },
+    "ghcr.io/devcontainers/features/node:1": {}
   },
+  // "build": {
+  //   "dockerfile": "../dockerfile"
+  // },
   "runArgs": [
     "--env-file",
     ".devcontainer/devcontainer.env",
@@ -21,7 +28,8 @@
         "esbenp.prettier-vscode",
         "tamasfe.even-better-toml",
         "kennylong.kubernetes-yaml-formatter",
-        "DavidAnson.vscode-markdownlint"
+        "DavidAnson.vscode-markdownlint",
+        "dotenv.dotenv-vscode"
       ],
       "settings": {
         "editor.formatOnSave": true,
