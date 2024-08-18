@@ -1,15 +1,15 @@
 {
   "name": "enoshima-escar",
   "image": "debian:12.6",
+  // "build": {
+  //   "dockerfile": "../dockerfile"
+  // },
   "features": {
     "ghcr.io/devcontainers/features/git:1": {},
     "ghcr.io/devcontainers/features/hugo:1": {
       "version": "0.128.2"
     }
   },
-  // "build": {
-  //   "dockerfile": "../dockerfile"
-  // },
   "runArgs": [
     "--env-file",
     ".devcontainer/devcontainer.env",
