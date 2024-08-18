@@ -4,8 +4,7 @@
   "features": {
     "ghcr.io/devcontainers/features/hugo:1": {
       "version": "0.128.2"
-    },
-    "ghcr.io/devcontainers/features/node:1": {}
+    }
   },
   // "build": {
   //   "dockerfile": "../dockerfile"
