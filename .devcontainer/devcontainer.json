@@ -2,6 +2,7 @@
   "name": "enoshima-escar",
   "image": "debian:12.6",
   "features": {
+    "ghcr.io/devcontainers/features/git:1": {},
     "ghcr.io/devcontainers/features/hugo:1": {
       "version": "0.128.2"
     }
