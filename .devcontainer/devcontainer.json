@@ -1,15 +1,15 @@
 {
   "name": "enoshima-escar",
   "image": "debian:12.6",
-  "features": {
-    "ghcr.io/devcontainers/features/hugo:1": {
-      "version": "0.128.2"
-    },
-    "ghcr.io/devcontainers/features/node:1": {}
-  },
   // "build": {
   //   "dockerfile": "../dockerfile"
   // },
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {},
+    "ghcr.io/devcontainers/features/hugo:1": {
+      "version": "0.128.2"
+    }
+  },
   "runArgs": [
     "--env-file",
     ".devcontainer/devcontainer.env",
@@ -58,6 +58,19 @@
         "[markdown]": {
           "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
           "files.trimTrailingWhitespace": false
+        },
+        "files.associations": {
+          ".env*": "dotenv"
+        },
+        "editor.tokenColorCustomizations": {
+          "textMateRules": [
+            {
+              "scope": "keyword.other.dotenv",
+              "settings": {
+                "foreground": "#FF000000"
+              }
+            }
+          ]
         }
       }
     }
