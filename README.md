@@ -1,7 +1,7 @@
 # Enoshima-Escar
 
 Hugo+Blowfishで作成したポートフォリオ。  
-<https://zen96k.github.io/enoshima-escar>
+<https://enoshima-escar.zen96k.jp>
 
 ## Commit Prefix
 
