@@ -15,9 +15,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-24.04
-    # concurrency:
-    #   group: ${{ github.workflow }}-${{ github.ref }}
-    #   cancel-in-progress: true
     env:
       TZ: Asia/Tokyo
     steps:
@@ -32,13 +29,6 @@ jobs:
         hugo-version: 0.128.2
     - name: Build Portfolio
       run: hugo --minify --environment production
-    # - name: Push Portfolio
-    #   uses: peaceiris/actions-gh-pages@v4
-    #   if: ${{ github.ref == 'refs/heads/work' }}
-    #   with:
-    #     github_token: ${{ secrets.GITHUB_TOKEN }}
-    #     publish_branch: deploy
-    #     publish_dir: ./public
     - name: Upload Artifact
       uses: actions/upload-pages-artifact@v3
       with:
