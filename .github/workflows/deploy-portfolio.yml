@@ -5,7 +5,7 @@ on:
     branches:
     - work
     paths:
-    - .github/workflows/build-portfolio.yml
+    - .github/workflows/deploy-portfolio.yml
     - archetypes/**
     - assets/**
     - config/**
