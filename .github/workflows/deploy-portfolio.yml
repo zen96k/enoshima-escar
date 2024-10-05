@@ -1,0 +1,50 @@
+name: Deploy Portfolio
+
+on:
+  push:
+    branches:
+    - work
+    paths:
+    - .github/workflows/deploy-portfolio.yml
+    - archetypes/**
+    - assets/**
+    - config/**
+    - content/**
+    - themes/**
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    env:
+      TZ: Asia/Tokyo
+    steps:
+    - name: Checkout Portfolio
+      uses: actions/checkout@v4
+      with:
+        submodules: true
+        fetch-depth: 0
+    - name: Install Hugo
+      uses: peaceiris/actions-hugo@v3
+      with:
+        hugo-version: 0.128.2
+    - name: Build Portfolio
+      run: hugo --minify --environment production
+    - name: Upload Artifact
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: public
+  deploy:
+    runs-on: ubuntu-24.04
+    env:
+      TZ: Asia/Tokyo
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+    - name: Deploy Portfolio
+      id: deploy
+      uses: actions/deploy-pages@v4
