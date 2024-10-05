@@ -1,4 +1,4 @@
-name: Build Portfolio
+name: Deploy Portfolio
 
 on:
   push:
@@ -13,15 +13,15 @@ on:
     - themes/**
 
 jobs:
-  build-portfolio:
+  build:
     runs-on: ubuntu-24.04
-    concurrency:
-      group: ${{ github.workflow }}-${{ github.ref }}
-      cancel-in-progress: true
+    # concurrency:
+    #   group: ${{ github.workflow }}-${{ github.ref }}
+    #   cancel-in-progress: true
     env:
       TZ: Asia/Tokyo
     steps:
-    - name: Checkout Source
+    - name: Checkout Portfolio
       uses: actions/checkout@v4
       with:
         submodules: true
@@ -32,10 +32,29 @@ jobs:
         hugo-version: 0.128.2
     - name: Build Portfolio
       run: hugo --minify --environment production
-    - name: Push Portfolio
-      uses: peaceiris/actions-gh-pages@v4
-      if: ${{ github.ref == 'refs/heads/work' }}
+    # - name: Push Portfolio
+    #   uses: peaceiris/actions-gh-pages@v4
+    #   if: ${{ github.ref == 'refs/heads/work' }}
+    #   with:
+    #     github_token: ${{ secrets.GITHUB_TOKEN }}
+    #     publish_branch: deploy
+    #     publish_dir: ./public
+    - name: Upload Artifact
+      uses: actions/upload-pages-artifact@v3
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_branch: deploy
-        publish_dir: ./public
+        path: public
+  deploy:
+    runs-on: ubuntu-24.04
+    env:
+      TZ: Asia/Tokyo
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+    - name: Deploy Portfolio
+      id: deploy
+      uses: actions/deploy-pages@v4
