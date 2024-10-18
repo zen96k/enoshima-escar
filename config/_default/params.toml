@@ -26,7 +26,7 @@ showReadingTime = false
 showTableOfContents = true
 showTaxonomies = true
 showWordCount = false
-sharingLinks = ["twitter", "bluesky"]
+sharingLinks = ["twitter", "bluesky", "facebook"]
 
 [list]
 showCards = true
