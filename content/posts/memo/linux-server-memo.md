@@ -5,12 +5,12 @@ categories = ["Memo"]
 tags = ["Linux", "Debian", "SSH", "Docker"]
 +++
 
-自宅のPCにLinuxをインストールして、最初にやったことの備忘録。  
+自宅のPCにLinuxをインストールして、最初にやったことの備忘録を書く。  
 ※ディストリビューションはDebian 12を使用した。
 
 ## タイムゾーン関連
 
-下記コマンドを実行して、タイムゾーンを設定する。  
+下記のコマンドを実行して、タイムゾーンを設定する。  
 日付や時刻が日本時間に設定できていればOK。
 
 ```bash
@@ -27,7 +27,7 @@ System clock synchronized: yes
 
 ### 参考URL
 
-<https://www.server-world.info/query?os=Ubuntu_22.04&p=timezone>  
+<https://www.server-world.info/query?os=Debian_12&p=timezone>  
 <https://zenn.dev/kumamoto/articles/51bf0893620f0c>
 
 ## SSH関連
@@ -61,3 +61,32 @@ Subsystem sftp /usr/lib/openssh/sftp-server
 
 <https://docs.docker.com/engine/install/debian>  
 <https://docs.docker.com/engine/security/rootless>
+
+## スクリプト関連
+
+下記の処理を一度に実行するシェルスクリプトを作成する。  
+
+* パッケージの更新
+* Dockerのpruneコマンド
+
+```bash
+#! /usr/bin/env bash
+
+set -euxo pipefail
+
+SCRIPT_DIRNAME=$(cd $(dirname ${0}) && pwd)
+
+cd ${SCRIPT_DIRNAME}
+
+sudo apt update && sudo apt full-upgrade -y && sudo apt autopurge -y
+sudo apt autoclean && sudo rm -rf /var/lib/apt/lists
+# gsettings set org.gnome.shell app-picker-layout "[]"
+
+rm -rf ${HOME}/.config/htop/htoprc
+sudo docker system prune -af --volumes
+# sudo docker volume prune -af
+docker system prune -af --volumes
+# docker volume prune -af
+
+sudo reboot
+```
