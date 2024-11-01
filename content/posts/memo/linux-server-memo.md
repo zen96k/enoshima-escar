@@ -27,7 +27,7 @@ System clock synchronized: yes
 
 ### 参考URL
 
-<https://www.server-world.info/query?os=Ubuntu_22.04&p=timezone>  
+<https://www.server-world.info/query?os=Debian_12&p=timezone>  
 <https://zenn.dev/kumamoto/articles/51bf0893620f0c>
 
 ## SSH関連
