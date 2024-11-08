@@ -79,14 +79,11 @@ SCRIPT_DIRNAME=$(cd $(dirname ${0}) && pwd)
 cd ${SCRIPT_DIRNAME}
 
 sudo apt update && sudo apt full-upgrade -y && sudo apt autopurge -y
-sudo apt autoclean && sudo rm -rf /var/lib/apt/lists
-# gsettings set org.gnome.shell app-picker-layout "[]"
+
+sudo docker system prune -af --volumes
+docker system prune -af --volumes
 
 rm -rf ${HOME}/.config/htop/htoprc
-sudo docker system prune -af --volumes
-# sudo docker volume prune -af
-docker system prune -af --volumes
-# docker volume prune -af
 
 sudo reboot
 ```
