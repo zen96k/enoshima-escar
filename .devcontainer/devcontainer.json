@@ -30,8 +30,7 @@
         "esbenp.prettier-vscode",
         "tamasfe.even-better-toml",
         "kennylong.kubernetes-yaml-formatter",
-        "DavidAnson.vscode-markdownlint",
-        "dotenv.dotenv-vscode"
+        "DavidAnson.vscode-markdownlint"
       ],
       "settings": {
         "editor.formatOnSave": true,
@@ -58,19 +57,6 @@
         "[markdown]": {
           "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
           "files.trimTrailingWhitespace": false
-        },
-        "files.associations": {
-          ".env*": "dotenv"
-        },
-        "editor.tokenColorCustomizations": {
-          "textMateRules": [
-            {
-              "scope": "keyword.other.dotenv",
-              "settings": {
-                "foreground": "#FF000000"
-              }
-            }
-          ]
         }
       }
     }
