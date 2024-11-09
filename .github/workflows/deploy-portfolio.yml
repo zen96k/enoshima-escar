@@ -35,15 +35,15 @@ jobs:
         path: public
   deploy:
     runs-on: ubuntu-24.04
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
     env:
       TZ: Asia/Tokyo
     needs: build
     permissions:
       pages: write
       id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deploy.outputs.page_url }}
     steps:
     - name: Deploy Portfolio
       id: deploy
