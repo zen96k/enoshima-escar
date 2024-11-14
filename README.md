@@ -1,6 +1,6 @@
 # Enoshima-Escar
 
-Hugo+Blowfishで作成したポートフォリオサイト。  
+Hugo+Blowfishで作成したポートフォリオ。  
 <https://enoshima-escar.zen96k.mydns.jp>
 
 ## Commit Prefix
