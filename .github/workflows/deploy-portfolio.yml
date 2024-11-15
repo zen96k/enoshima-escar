@@ -10,6 +10,7 @@ on:
     - assets/**
     - config/**
     - content/**
+    - static/**
     - themes/**
 
 jobs:
