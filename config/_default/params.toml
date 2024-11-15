@@ -11,6 +11,7 @@ autoSwitchAppearance = false
 
 enableSearch = true
 
+images = ["ogp-image.jpg"]
 defaultBackgroundImage = "img/background.jpg"
 
 [homepage]
