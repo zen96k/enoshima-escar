@@ -9,7 +9,7 @@ colorScheme = "blowfish"
 defaultAppearance = "dark"
 autoSwitchAppearance = false
 
-enableSearch = true
+enableSearch = false
 
 images = ["ogp-image.jpg"]
 defaultBackgroundImage = "img/background.jpg"
