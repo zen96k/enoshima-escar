@@ -1,6 +1,6 @@
 {
   "name": "enoshima-escar",
-  "image": "debian:12.6",
+  "image": "debian",
   // "build": {
   //   "dockerfile": "../dockerfile"
   // },
