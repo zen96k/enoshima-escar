@@ -1,6 +1,6 @@
 +++
 title = "VSCodeの設定(備忘録)"
-date = "2025-02-05"
+date = "2025-02-04"
 categories = ["Memo"]
 tags = ["VSCode", "Windows"]
 +++
