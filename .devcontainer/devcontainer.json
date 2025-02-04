@@ -4,7 +4,7 @@
   "features": {
     "ghcr.io/devcontainers/features/git:1": {},
     "ghcr.io/devcontainers/features/hugo:1": {
-      "version": "0.135.0"
+      "version": "0.142.0"
     }
   },
   "runArgs": ["--env-file", ".devcontainer/devcontainer.env", "--rm"],
