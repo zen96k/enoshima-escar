@@ -15,7 +15,7 @@ VSCodeの設定(settings.json)の備忘録を書く。
   "files.trimTrailingWhitespace": true,
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
-  "remote.autoForwardPortsSource": "process",
+  "remote.autoForwardPortsSource": "hybrid",
   "security.workspace.trust.enabled": false,
   "window.confirmSaveUntitledWorkspace": false,
   "workbench.colorTheme": "GitHub Dark"
