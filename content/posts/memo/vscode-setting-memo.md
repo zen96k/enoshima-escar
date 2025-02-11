@@ -9,6 +9,7 @@ VSCodeの設定(settings.json)の備忘録を書く。
 
 ```json:settings.json
 {
+  "dev.containers.executeInWSL": true,
   "editor.fontSize": 16,
   "editor.fontFamily": "BIZ UDゴシック",
   "editor.renderWhitespace": "all",
