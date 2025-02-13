@@ -3,7 +3,7 @@ name: Deploy Portfolio
 on:
   push:
     branches:
-    - work
+    - main
     paths:
     - .github/workflows/deploy-portfolio.yml
     - archetypes/**
