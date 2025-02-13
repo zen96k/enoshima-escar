@@ -2,10 +2,6 @@ SIerに勤務するクソ雑魚エンジニア
 絶望九州リージョン生まれ  
 アジカン/BUMP/ガリレオが好き
 
-<!-- {{< button href="/posts" target="_self" >}}
-Posts
-{{< /button >}} -->
-
 {{< typeit
     speed=300
     tag=h3

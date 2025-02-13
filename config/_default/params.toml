@@ -17,6 +17,7 @@ defaultBackgroundImage = "img/background.jpg"
 [homepage]
 layout = "hero"
 showRecent = true
+showRecentItems = 6
 # showMoreLink = true
 cardView = true
 
