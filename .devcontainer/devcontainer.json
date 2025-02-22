@@ -2,7 +2,9 @@
   "name": "enoshima-escar",
   "image": "debian",
   "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {},
     "ghcr.io/devcontainers/features/git:1": {},
+    "ghcr.io/devcontainers/features/go:1": {},
     "ghcr.io/devcontainers/features/hugo:1": {
       "version": "0.142.0"
     }
@@ -20,7 +22,8 @@
         "esbenp.prettier-vscode",
         "tamasfe.even-better-toml",
         "kennylong.kubernetes-yaml-formatter",
-        "DavidAnson.vscode-markdownlint"
+        "DavidAnson.vscode-markdownlint",
+        "mads-hartmann.bash-ide-vscode"
       ]
     }
   },
