@@ -16,6 +16,7 @@
   "customizations": {
     "vscode": {
       "extensions": [
+        "Codeium.codeium",
         "eamodio.gitlens",
         "ms-azuretools.vscode-docker",
         "MS-CEINTL.vscode-language-pack-ja",
@@ -23,7 +24,9 @@
         "tamasfe.even-better-toml",
         "kennylong.kubernetes-yaml-formatter",
         "DavidAnson.vscode-markdownlint",
-        "mads-hartmann.bash-ide-vscode"
+        "mads-hartmann.bash-ide-vscode",
+        "bierner.markdown-preview-github-styles",
+        "JeffersonLicet.snipped"
       ]
     }
   },
