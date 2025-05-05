@@ -29,5 +29,6 @@
       ]
     }
   },
-  "postStartCommand": "bash .devcontainer/script/post_start_command.sh"
+  "postStartCommand": "bash .devcontainer/script/post_start_command.sh",
+  "waitFor": "postStartCommand"
 }
